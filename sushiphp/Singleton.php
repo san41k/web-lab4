@@ -9,21 +9,12 @@ class Singleton
     {
     }
 
-    private function __clone()
-    {
-    }
-
     public static function getVar()
     {
         if (self::$variable === null) {
             return self::$variable = new self();
         } else
             return self::$variable;
-    }
-
-    public function printTest()
-    {
-        return "<br>Yes<br>";
     }
 }
 
