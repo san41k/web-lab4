@@ -100,8 +100,6 @@
 
     $s1 = Singleton::getVar();
     $s2 = Singleton::getVar();
-    echo $s1->printTest();
-    echo $s2->printTest();
     if($s2 === $s1)
         echo '<br>$s1 === $s2<br>';
 
